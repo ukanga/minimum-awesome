@@ -17,4 +17,4 @@ ln $BASEDIR/vimrc.bundles.local ~/.vimrc.bundles.local
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle || (cd ~/.vim/bundle/vundle && git pull && cd -)
 
 # Install all the bundles.
-vim +BundleInstall +qall
+`which nvim || which vim` +BundleInstall +qall
